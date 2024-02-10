@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header,nav{
+    display: flex;
+    justify-content: center;
+ 
+}
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 0 0 0;
+    /* padding-top: 10px; */
+    height: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+aside{
+    background-color: #ccc;
+    color: black;
+    /* width: 30%; */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-Content{
+    display: contents
+}
+/*INPUT FIELDS*/
+/* Basic styling for input elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type=tel],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Styling for input focus state */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type=tel]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color on focus */
+}
+
+/* Styling for disabled input */
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="number"]:disabled,
+textarea:disabled {
+    background-color: #f4f4f4; /* Change background color of disabled input */
+    color: #777; /* Change text color of disabled input */
+}
+
+/* Styling for input placeholder */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999; /* Change placeholder text color */
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999; /* Change placeholder text color */
+    opacity: 1; /* Set opacity to fully visible */
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999; /* Change placeholder text color */
+    opacity: 1; /* Set opacity to fully visible */
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999; /* Change placeholder text color */
+}
+
+/* Example styling for input with error state */
+.input-error {
+    border-color: #dc3545 !important; /* Change border color for error state */
+}
+/*SUBMIT BUTTON */
+
+/* Basic styling for submit button */
+input[type="submit"] {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    background-color:#fff; /* Change background color */
+    color: #080808; /* Change text color */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Styling for submit button hover state */
+input[type="submit"]:hover {
+    background-color:#999; /* Darken background color on hover */
+}
+
+/* Styling for submit button active state */
+input[type="submit"]:active {
+    background-color: #004280; /* Darker background color when clicked */
+}
+
+/* Styling for disabled submit button */
+input[type="submit"]:disabled {
+    background-color: #ccc; /* Change background color of disabled button */
+    color: #999; /* Change text color of disabled button */
+    cursor: not-allowed;
+}
+
+/* Example styling for submit button with error state */
+.submit-error {
+    background-color: #dc3545; /* Change background color for error state */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 100%; /* Display main content and sidebar stacked on top of each other */
+    }
+}
+
+/* Additional media query for smaller screens */
+@media only screen and (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
